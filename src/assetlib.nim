@@ -68,7 +68,9 @@ proc init(manifest = "assets.json") =
   ## Initialize a manifest file
   if not fileExists(manifest):
     var defaultAssets = new(AssetsJson)
+    defaultAssets.sources = newTable[string, seq[string]]()
     defaultAssets.sources["<source directory>"] = @["<glob pattern>"]
+    defaultAssets.assets = newTable[string, TableRef[string, string]]()
     defaultAssets.assets["."] = newTable[string, string]()
     let content = pretty(%defaultAssets)
     writeFile(manifest, content)
