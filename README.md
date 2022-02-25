@@ -2,7 +2,7 @@
 A simple command line tool for fetching binary files such as images or audio into a project without pushing them to source control such as git.
 
 ## Install
-For Windows, you can download the .exe file in the [Releases](https://github.com/larryc5/assetlib/releases) page. You'll need to manually add it to your PATH variable.
+For Windows, you can download the .exe file in the [Releases](https://github.com/lac5/assetlib/releases) page. You'll need to manually add it to your PATH variable.
 
 However for any OS if you have nim/nimble installed, you can install it by downloading the source code and then executing this in the command line:
 

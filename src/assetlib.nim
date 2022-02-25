@@ -47,6 +47,8 @@ from dotenv import
   initDotEnv,
   load
 
+# comment
+
 type AssetsJson = object
   sources: TableRef[string, seq[string]]
   assets: TableRef[string, TableRef[string, string]]
